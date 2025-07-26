@@ -136,10 +136,12 @@ const AboutContent = ()=> {
                     exit="hidden"
                     className="max-w-[450px] mb-6 xl:mb-12 mx-auto xl:mx-0 px-2 xl:px-0"
                 >
-                    2 years ago, i began freelancing as a developer. since then,
-                    {"i've "}
-                    done remote work for agencies, consulted for startups, and
-                    collaborated for a digital products for business and consumer use.
+                    I’m Hani Abdallah, a web developer and UI/UX enthusiast starting my
+                    journey in the tech world. With a solid foundation in modern tools
+                    like React, Next.js, and Figma, I’m dedicated to building engaging
+                    websites and interfaces. My education in Web Development fuels my 
+                    creativity, and I’m excited to grow by tackling diverse projects.
+                    Let’s connect to create something amazing!
                 </motion.p>
                 </div>
                 {/* info */}

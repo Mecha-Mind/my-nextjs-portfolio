@@ -32,7 +32,9 @@ const HomeContent = () => {
                         exit="hidden"
                         className="mx-auto lg:mx-0 mb-10 lg:mb-15 max-w-sm lg:max-w-xl"
                     >
-                        "I’m Hani Abdallah, a dedicated web developer with 3+ years of experience. I’ve worked as a freelancer, collaborated with agencies, and consulted for startups to create impactful digital products using tools like React, Next.js, and Figma. Let’s work together to build your next project!"
+                        Welcome to my portfolio! I’m Hani Abdallah, a web developer passionate
+                        about crafting unique digital experiences. Explore my work and let’s
+                        collaborate on your next big idea!
                     </motion.p>
                     {/* btn */}
                     <motion.div
