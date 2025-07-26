@@ -29,8 +29,11 @@ const ServiceContent = () => {
               exit={"hidden"}
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-              modi. Nisi, corrupti iusto voluptas repellat.
+              Discover my front-end web development services, where I build responsive
+              and dynamic websites using React, Next.js, and modern JavaScript. From
+              custom designs to optimized performance, I deliver clean code and
+              seamless user experiences. Whether it’s a personal project or a business
+              site, let’s work together to bring your vision online!
             </motion.p>
           </div>
           {/* slider */}

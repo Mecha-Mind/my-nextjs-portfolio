@@ -30,8 +30,7 @@ const WorkContent = () => {
               exit={"hidden"}
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
-              modi. Nisi, corrupti iusto voluptas repellat.
+              Explore my portfolio of web projects, where I bring ideas to life using React, Next.js, and more tools. From personal experiments to client-inspired designs, each piece reflects my passion for creating functional and visually appealing digital solutions. Check out my work and let’s collaborate on your next project!
             </motion.p>
           </div>
           {/* Work slider */}

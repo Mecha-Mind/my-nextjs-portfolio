@@ -2,24 +2,25 @@
 const testimonialData = [
   {
     image: '/t-avt-1.png',
-    name: 'Anne Smith',
-    position: 'Customer',
+    name: 'Omar F.',
+    position: 'Entrepreneur',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+      'The site Hani built with Next.js exceeded our expectations. The performance was top-notch, and the code was clean. Great to work with!'
   },
   {
     image: '/t-avt-2.png',
-    name: 'Lora Doe',
-    position: 'Customer',
+    name: 'Sara M.',
+    position: 'Owner of a Small Business',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam!',
+      'Hani’s work on our website was outstanding! His use of React made it fast and interactive. Highly recommend him for any front-end project!',
   },
   {
     image: '/t-avt-3.png',
-    name: 'Jhon Doe',
-    position: 'Customer',
+    name: 'Ahmed Khaled',
+    position: 'Marketing Manager',
     message:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat!',
+      'Hani turned our idea into a stunning website using JavaScript and modern tools. His dedication made the process smooth and enjoyable!'
+      ,
   },
 ];
 
