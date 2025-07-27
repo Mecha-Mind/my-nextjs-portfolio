@@ -12,12 +12,12 @@ export const metadata = {
 
 const About = () => {
   return (
-    <div className="h-full py-32 xl:text-left bg-primary/30 text-center">
+    <section className="h-full py-32 xl:text-left bg-primary/30 text-center">
       {/* circles */}
       <Circles />
       {/* avatar */}
       <AboutContent/>
-    </div>
+    </section>
   );
 };
 

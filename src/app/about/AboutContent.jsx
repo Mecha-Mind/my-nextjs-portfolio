@@ -8,6 +8,7 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaGit
 } from "react-icons/fa";
 
 import {
@@ -35,10 +36,10 @@ const aboutData = [
           ],
         },
         {
-          title: "UI/UX Design",
+          title: "Tools",
           icons: [
+            <FaGit key="git" />,
             <FaFigma key="figma" />,
-            <SiAdobexd key="adobexd" />,
             <SiAdobephotoshop key="photoshop" />,
           ],
         },
@@ -52,7 +53,7 @@ const aboutData = [
           stage: "2025 - 2025",
         },
         {
-          title: "Adobe Design Achievement Awards - Finalist",
+          title: "Front-end dev - Finalist",
           stage: "2025 - 2025",
         },
       ],
@@ -61,15 +62,15 @@ const aboutData = [
       title: "experience",
       info: [
         {
-          title: "UX/UI Designer - XYZ Company",
-          stage: "2025 - 2025",
-        },
-        {
-          title: "Web Developer - ABC Agency",
-          stage: "2025 - 2025",
+          title: "Web Developer - Freelance",
+          stage: "2022 - 2024",
         },
         {
           title: "Intern - DEF Corporation",
+          stage: "2025 - 2025",
+        },
+        {
+          title: "Wordpress Developer - Bright Vision Academy",
           stage: "2025 - 2025",
         },
       ],
@@ -78,15 +79,15 @@ const aboutData = [
       title: "credentials",
       info: [
         {
-          title: "Web Development - ABC University, LA, CA",
-          stage: "2025",
+          title: "Web Development - ALX",
+          stage: "2023",
         },
         {
-          title: "Computer Science Diploma - AV Technical Institute",
-          stage: "2025",
+          title: "Responsive Web Design - freeCodeCamp",
+          stage: "2023",
         },
         {
-          title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
+          title: "JavaScript Algorithms and Data Structures - In Progress",
           stage: "2025",
         },
       ],

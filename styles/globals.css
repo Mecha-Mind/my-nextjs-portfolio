@@ -51,12 +51,19 @@
 }
 
 @layer base {
+
+    html { @apply overflow-x-hidden; }
+
     body {
       @apply bg-secondary overflow-hidden leading-relaxed;
     }
 
     .page {
-      @apply w-full h-screen overflow-hidden;
+      @apply w-full min-h-dvh overflow-hidden;
+    }
+
+    section {
+      @apply mt-[40px];
     }
 
     .h1 {

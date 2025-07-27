@@ -9,8 +9,8 @@ const HomeContent = () => {
     return (
         <>
             {/* text */}
-            <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-                <div className="container flex flex-col justify-center h-full text-center lg:text-left lg:pt-40 mx-auto">
+            <div className="w-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+                <div className="container flex flex-col justify-center h-full text-center lg:text-left lg:pt-40 mx-auto min-h-dvh">
                 {/* title */}
                     <motion.h1
                         variants={fadeIn("down", 0.2)}

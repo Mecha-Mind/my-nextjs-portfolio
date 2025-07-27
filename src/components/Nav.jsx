@@ -36,7 +36,7 @@ import { usePathname } from 'next/navigation';
 const Nav = () => {
   const pathname = usePathname();
   return (
-    <nav className="flex flex-col items-center lg:justify-center fixed h-max z-50 w-full lg:right-[2%] mt-auto lg:w-16 bottom-0 lg:max-w-md lg:h-screen ">
+    <nav className="flex flex-col items-center lg:justify-center fixed h-max z-50 w-full lg:right-[2%] mt-auto lg:w-16 bottom-0 lg:max-w-md lg:h-screen">
       {/* {inner} */}
       <div className="flex items-center justify-between lg:flex-col gap-y-10 w-full px-6 xl:px-0 bg-white/10 h-[80px] text-3xl lg:text-xl lg:py-8 lg:h-max backdrop-blur-sm lg:rounded-full">
         {navData.map((navLink, index) => {

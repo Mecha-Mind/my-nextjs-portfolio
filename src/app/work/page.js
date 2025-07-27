@@ -12,7 +12,7 @@ export const metadata = {
 
 const Work = () => {
   return (
-    <div className="h-full py-36 flex items-center bg-primary/30">
+    <section className="h-full py-36 flex items-center bg-primary/30">
       <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -20,7 +20,7 @@ const Work = () => {
         </div>
       </div>
       <Bulb />
-    </div>
+    </section>
   );
 };
 
