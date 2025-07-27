@@ -63,7 +63,7 @@
     }
 
     section {
-      @apply mt-[40px] min-h-dvh flex justify-center align-center;
+      @apply mt-[40px] min-h-dvh flex justify-center items-center;
     }
 
     .h1 {
