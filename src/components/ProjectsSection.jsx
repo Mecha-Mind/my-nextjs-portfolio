@@ -94,7 +94,7 @@ const ProjectsSection = () => {
         <div className="flex justify-center animate-fade-in-up-delay-4">
           <Link
             href="/work"
-            className="group flex items-center gap-2 px-8 py-4 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-lg shadow-accent/20 hover:shadow-accent/30 hover:scale-105"
+            className="group flex items-center gap-2 px-8 py-4 bg-accent/70 text-white font-semibold rounded-lg bg-accent/50 transition-all duration-300 shadow-lg shadow-accent/20 hover:shadow-accent/30 hover:scale-105"
           >
             View All Projects
             <HiArrowRight className="text-xl group-hover:translate-x-1 transition-transform duration-300" />

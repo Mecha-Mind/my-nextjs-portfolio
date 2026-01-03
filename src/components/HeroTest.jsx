@@ -84,7 +84,7 @@ const HeroTest = () => {
             >
               <a
                 href="#projects"
-                className="px-8 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-colors duration-200 shadow-lg shadow-accent/20 hover:shadow-accent/30 hover:scale-105 transform"
+                className="px-8 py-3 bg-accent/70 text-white font-semibold rounded-lg bg-accent/50 transition-colors duration-200 shadow-lg shadow-accent/20 hover:shadow-accent/30 hover:scale-105 transform"
               >
                 View Projects
               </a>
@@ -99,17 +99,17 @@ const HeroTest = () => {
             }`}
           >
             {/*  Large gradient circle 
-            <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-pulse-slow"></div>
+            <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-accent/70/20 rounded-full blur-3xl animate-pulse-slow"></div>
 
             {/* Medium circle 
-            <div className="absolute top-1/4 right-1/3 w-32 h-32 bg-accent/30 rounded-full blur-2xl"></div>
+            <div className="absolute top-1/4 right-1/3 w-32 h-32 bg-accent/70/30 rounded-full blur-2xl"></div>
 
             {/* Small accent circle 
-            <div className="absolute bottom-1/4 right-1/2 w-24 h-24 bg-accent/40 rounded-full blur-xl"></div>
+            <div className="absolute bottom-1/4 right-1/2 w-24 h-24 bg-accent/70/40 rounded-full blur-xl"></div>
 
             {/* Geometric shapes 
-            <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-accent rounded-full animate-ping-slow"></div>
-            <div className="absolute bottom-1/3 right-1/3 w-3 h-3 bg-accent/60 rounded-full"></div>
+            <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-accent/70 rounded-full animate-ping-slow"></div>
+            <div className="absolute bottom-1/3 right-1/3 w-3 h-3 bg-accent/70/60 rounded-full"></div>
 
             {/* Abstract lines/grid pattern 
             <div className="absolute inset-0 opacity-10">
@@ -125,7 +125,7 @@ const HeroTest = () => {
 
             {/* Additional decorative elements 
             <div className="absolute top-1/5 left-1/4 w-8 h-8 border border-accent/20 rounded-full"></div>
-            <div className="absolute bottom-1/5 left-1/3 w-6 h-6 bg-accent/10 rounded-full"></div>
+            <div className="absolute bottom-1/5 left-1/3 w-6 h-6 bg-accent/70/10 rounded-full"></div>
           </div> */}
 
           {/* Mobile decorative elements */}
@@ -134,9 +134,9 @@ const HeroTest = () => {
               isVisible ? "animate-fade-in-up-delay-4" : "opacity-0"
             }`}
           >
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-accent/20 rounded-full blur-3xl"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-accent/30 rounded-full blur-2xl"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-accent rounded-full"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-accent/70/20 rounded-full blur-3xl"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-accent/70/30 rounded-full blur-2xl"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-accent/70 rounded-full"></div>
           </div> */}
         </div>
       </div>

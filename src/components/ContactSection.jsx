@@ -29,7 +29,7 @@ const ContactSection = () => {
             {/* Contact Info */}
             <div className="flex flex-col gap-4 mb-8 animate-fade-in-up-delay-3">
               <div className="flex items-center gap-4 justify-center lg:justify-start">
-                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-accent/70/20 flex items-center justify-center">
                   <HiEnvelope className="text-accent text-xl" />
                 </div>
                 <div>
@@ -44,7 +44,7 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-center gap-4 justify-center lg:justify-start">
-                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-accent/70/20 flex items-center justify-center">
                   <HiPhone className="text-accent text-xl" />
                 </div>
                 <div>
@@ -59,7 +59,7 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-center gap-4 justify-center lg:justify-start">
-                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-accent/70/20 flex items-center justify-center">
                   <HiMapPin className="text-accent text-xl" />
                 </div>
                 <div>
@@ -74,7 +74,7 @@ const ContactSection = () => {
           <div className="flex-1 flex justify-center lg:justify-end animate-fade-in-up-delay-4">
             <Link
               href="/contact"
-              className="group flex items-center gap-3 px-10 py-5 bg-accent text-white font-semibold rounded-lg hover:bg-accent/90 transition-all duration-300 shadow-lg shadow-accent/20 hover:shadow-accent/30 hover:scale-105 text-lg"
+              className="group flex items-center gap-3 px-10 py-5 bg-accent/70 text-white font-semibold rounded-lg bg-accent/50 transition-all duration-300 shadow-lg shadow-accent/20 hover:shadow-accent/30 hover:scale-105 text-lg"
             >
               Get In Touch
               <HiArrowRight className="text-2xl group-hover:translate-x-2 transition-transform duration-300" />

@@ -36,7 +36,7 @@ const UpToTop = () => {
     return (
         <button
             onClick={handleScrollToTop}
-            className={`fixed bottom-26 right-5 bg-accent cursor-pointer text-white p-2 rounded-full hover:bg-accent transition-all duration-300 z-100 hover:scale-105
+            className={`fixed bottom-26 right-5 bg-accent/70 cursor-pointer text-white p-2 rounded-full hover:bg-accent/70 transition-all duration-300 z-100 hover:scale-105
                  ${
                 showButton ? "opacity-100" : "opacity-0"
             }`}
