@@ -84,6 +84,7 @@ const HeroTest = () => {
             >
               <a
                 href="#projects"
+                aria-label="View Projects"
                 className="px-8 py-3 bg-accent/70 text-white font-semibold rounded-lg bg-accent/50 transition-colors duration-200 shadow-lg shadow-accent/20 hover:shadow-accent/30 hover:scale-105 transform"
               >
                 View Projects

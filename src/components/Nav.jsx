@@ -42,6 +42,7 @@ const Nav = () => {
             <Link
               href={navLink.path}
               key={navLink.name}
+              aria-label={navLink.name}
               className={`${
                 navLink.path === pathname && "text-accent"
               } relative flex group items-center hover:text-accent/70 transition-all duration-300`}

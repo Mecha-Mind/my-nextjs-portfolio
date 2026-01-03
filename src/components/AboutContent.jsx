@@ -130,7 +130,7 @@ const AboutContent = ()=> {
               </div>
                 {/* info */}
               <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
-                <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-8 animate-fade-in-up-delay-3">
+                <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-8 animate-fade-in-up-delay-3 animate-fade-in-up-init">
                     {aboutData.map((item, itemIndex) => {
                     return (
                         <div
@@ -150,7 +150,7 @@ const AboutContent = ()=> {
                 </div>
                 <div
                     
-                    className="flex flex-col py-2 xl:py-5 gap-y-2 xl:gap-y-5 items-center xl:items-start animate-fade-in-up-delay-4 "
+                    className="flex flex-col py-2 xl:py-5 gap-y-2 xl:gap-y-5 items-center xl:items-start animate-fade-in-up-delay-4 animate-fade-in-up-init"
                 >
                     {aboutData[index].info.map((item, itemIndex) => {
                     return (
@@ -162,7 +162,7 @@ const AboutContent = ()=> {
                         <div className="mb-2 md:mb-0 font-light">{item.title}</div>
                         <div className="hidden md:flex">-</div>
                         <div>{item.stage}</div>
-                        <div className="flex gap-x-3 animate-fade-in-up-delay-5">
+                        <div className="flex gap-x-3 animate-fade-in-up-delay-5 animate-fade-in-up-init">
                             {item.icons?.map((icon, itemIndex) => {
                             return (
                                 <div key={itemIndex} className="text-2xl text-white">
