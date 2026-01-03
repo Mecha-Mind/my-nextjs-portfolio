@@ -1,5 +1,8 @@
 // components
-import HomeContent from "@/components/HomeContent";
+import HeroTest from "@/components/HeroTest";
+import AboutContent from "@/components/AboutContent";
+import ProjectsSection from "@/components/ProjectsSection";
+import ContactSection from "@/components/ContactSection";
 
 // meta data
 export const metadata = {
@@ -10,8 +13,11 @@ export const metadata = {
 
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full">
-      <HomeContent />
+    <div className="h-full">
+      <HeroTest />
+      <AboutContent />
+      <ProjectsSection />
+      <ContactSection />
     </div>
   );
 };

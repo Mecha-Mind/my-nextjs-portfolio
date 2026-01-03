@@ -1,3 +1,4 @@
+"use client"
 // testimonial data
 const testimonialData = [
   {

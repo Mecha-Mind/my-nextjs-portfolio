@@ -3,14 +3,17 @@
 import Nav from "./Nav";
 import Header from "./Header";
 import TopLeftImg from "./TopLeftImg";
+import UpToTop from "./UpToTop";
 
 const Layout = ({ children }) => {
   return (
     <>
-      <TopLeftImg />
-      <Nav />
-      <Header />
-      {children}
+      <UpToTop />
+        <TopLeftImg />
+        <Nav />
+        <Header />
+        {children}
+    
     </>
   );
 };

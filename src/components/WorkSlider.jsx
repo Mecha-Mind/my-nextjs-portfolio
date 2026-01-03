@@ -1,3 +1,4 @@
+"use client"
 // data
 const workSlides = {
   slides: [
@@ -90,9 +91,16 @@ const WorkSlider = () => {
                       <Link href={url} target="_blank" rel="noopener noreferrer" className="relative rounded-lg overflow-hidden flex items-center justify-center group" key={index}>
                         <div className="relative overflow-hidden flex items-center justify-center group">
                           {/* Images */}
-                          <Image src={path} width={500} height={300} alt="projectImage" />
+                          <Image
+                            src={path}
+                            width={500}
+                            height={300}
+                            alt="projectImage"
+                            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
+                            style={{ width: 'auto', height: 'auto' }}
+                          />
                           {/* overlay bg */}
-                          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e83838] to-[#4a22bd opacity-0 group-hover:opacity-80 transition-all duration-700]"></div>
+                          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e83838] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                           {/* title */}
                           <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
                             <div className="flex items-center gap-x-2 tracking-[0.2em] text-[13px]">

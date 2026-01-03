@@ -11,7 +11,6 @@ const sora = Sora({
 import "../../styles/globals.css";
 // components
 import Layout from "../components/Layout";
-import ClientLayout from "../components/ClientLayout";
 
 
 // meta data
@@ -29,9 +28,7 @@ export default function RootLayout({ children }) {
     >
 
         <Layout>
-          <ClientLayout>
               {children}
-          </ClientLayout>
         </Layout>
       </body>
     </html>

@@ -5,10 +5,6 @@ import modules from './page.module.css'
 // react icon
 import { BsArrowRight } from "react-icons/bs";
 
-// framer motion
-import { motion } from "framer-motion";
-import { fadeIn } from "/variants";
-
 // toastify
 import { ToastContainer, toast } from "react-toastify";
 
@@ -101,29 +97,21 @@ const ContactContent = () => {
     return (
         <>
             {/* text */}
-          <motion.h2
-            variants={fadeIn("down", 0.3)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h2 mb-12"
+          <h2
+            className="h2 mb-12 animate-fade-in-up-delay-1 animate-fade-in-up-init"
           >
             {"let's"} <span className="text-accent">connect.</span>
-          </motion.h2>
+          </h2>
           
           {/* form */}
           {submitSuccess ? (
-          <div className={modules.successMessage}>"Email Was Successfully Sent!"</div>
+          <div className="animate-fade-in-up-delay-3 animate-fade-in-up-init">Email Was Successfully Sent!</div>
             ) : (
-          <motion.form
-            variants={fadeIn("up", 0.5)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
+          <form
+            className="flex-1 flex flex-col gap-6 w-full animate-fade-in-up-delay-2 animate-fade-in-up-init"
             id="contact-form"
             onSubmit={handleSubmit}
             noValidate
-            className="flex-1 flex flex-col gap-6 w-full"
           >
             {/* inputs */}
             <div className="flex flex-col w-full gap-6 md:flex-row">
@@ -184,7 +172,7 @@ const ContactContent = () => {
               </span>
               <BsArrowRight className="opacity-0 group-hover:opacity-100 -translate-y-[120%] group-hover:-translate-y-0 transition-all duration-300 group-hover:flex absolute text-[22px]" />
             </button>
-          </motion.form>
+          </form>
           )}
           <div>
             <ToastContainer></ToastContainer>
