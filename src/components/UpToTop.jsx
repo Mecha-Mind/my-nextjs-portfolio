@@ -36,9 +36,9 @@ const UpToTop = () => {
     return (
         <button
             onClick={handleScrollToTop}
-            className={`fixed bottom-26 right-5 bg-accent/70 cursor-pointer text-white p-2 rounded-full hover:bg-accent/70 transition-all duration-300 z-100 hover:scale-105
+            className={` bottom-26 right-5 bg-accent/70 cursor-pointer text-white p-2 rounded-full hover:bg-accent/70 transition-all duration-300 z-100 hover:scale-105
                  ${
-                showButton ? "opacity-100" : "opacity-0"
+                showButton ? "opacity-100 fixed" : "opacity-0 hidden"
             }`}
             aria-label="Scroll to top"
         >
