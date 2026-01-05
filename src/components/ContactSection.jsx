@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { HiArrowRight, HiEnvelope, HiPhone, HiMapPin } from "react-icons/hi2";
+import { FaWhatsapp } from "react-icons/fa";
 
 /**
  * ContactSection - سكشن الاتصال للصفحة الرئيسية
@@ -33,12 +34,12 @@ const ContactSection = () => {
                   <HiEnvelope className="text-accent text-xl" />
                 </div>
                 <div>
-                  <p className="text-white/60 text-sm">Email</p>
+                  <p className="text-white/60 text-sm">WhatsApp</p>
                   <a 
                     href="mailto:hani@example.com" 
                     className="text-white hover:text-accent transition-colors"
                   >
-                    hanishetos4@gmail.com
+                    +20 012 7712 1823
                   </a>
                 </div>
               </div>

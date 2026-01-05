@@ -3,7 +3,7 @@ import HeroTest from "@/components/HeroTest";
 import AboutContent from "@/components/AboutContent";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
-
+import ProjectsGallery from "@/components/ProjectsGallery";
 // meta data
 export const metadata = {
   title: "Hani Abdallah - Home",
@@ -16,7 +16,8 @@ const Home = () => {
     <div className="h-full">
       <HeroTest />
       <AboutContent />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
+      <ProjectsGallery />
       <ContactSection />
     </div>
   );

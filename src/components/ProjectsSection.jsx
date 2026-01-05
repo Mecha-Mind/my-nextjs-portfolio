@@ -45,13 +45,9 @@ const ProjectsSection = () => {
         {/* Heading */}
         <div className="flex flex-col items-center text-center mb-16">
           <h2 className="h2 animate-fade-in-up-delay-1">
-            Featured <span className="text-accent">Projects</span>
+            
           </h2>
-          <p className="max-w-[600px] mx-auto mt-4 mb-8 animate-fade-in-up-delay-2">
-            Explore my portfolio of web projects, where I bring ideas to life using React, Next.js, and more tools. 
-            From personal experiments to client-inspired designs, each piece reflects my passion for creating functional 
-            and visually appealing digital solutions.
-          </p>
+          
         </div>
 
         {/* Projects Grid */}
@@ -90,16 +86,7 @@ const ProjectsSection = () => {
           ))}
         </div>
 
-        {/* View All Button */}
-        <div className="flex justify-center animate-fade-in-up-delay-4">
-          <Link
-            href="/work"
-            className="group flex items-center gap-2 px-8 py-4 bg-accent/70 text-white font-semibold rounded-lg bg-accent/50 transition-all duration-300 shadow-lg shadow-accent/20 hover:shadow-accent/30 hover:scale-105"
-          >
-            View All Projects
-            <HiArrowRight className="text-xl group-hover:translate-x-1 transition-transform duration-300" />
-          </Link>
-        </div>
+       
       </div>
     </section>
   );

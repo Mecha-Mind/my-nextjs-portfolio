@@ -22,15 +22,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .container {
   @apply max-w-[1200px] mx-auto px-[15px];
 }
@@ -67,7 +58,7 @@ html {
     }
 
     section {
-      @apply mt-[9rem] lg:mt-[5rem] min-h-dvh flex justify-center items-center;
+      @apply  min-h-dvh flex justify-center items-center;
     }
 
     .h1 {
@@ -153,32 +144,88 @@ html {
   }
 }
 
-@keyframes revealUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-@keyframes upToTop {
+
+
+@keyframes slideInFromLeft {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateX(-50px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInFromLeft 0.5s ease-out forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInFromRight 0.5s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.4s ease-out forwards;
+}
+
+/* Custom scrollbar for modal */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--primary-color);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
 
 @layer utilities {
   /* الحالة الافتراضية */
  /* default: visible content */
-  .reveal {
+  /* .reveal {
     opacity: 1;
   }
   .reveal-init {
@@ -188,7 +235,7 @@ html {
   
   .reveal-visible {
     animation: revealUp 0.6s ease-out forwards;
-  }
+  } */
   /* Fade-in + slide-up animation */
   .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out forwards;
@@ -259,6 +306,6 @@ html {
   }
 
   .animate-up-to-top {
-    animation: upToTop 2.6s ease-out infinite;
+    animation: fadeInUp 2.6s ease-out infinite;
   }
 }

@@ -12,7 +12,9 @@ const Layout = ({ children }) => {
         <TopLeftImg />
         <Nav />
         <Header />
-        {children}
+        <main>
+          {children}
+        </main>
     
     </>
   );
