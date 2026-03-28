@@ -1,3 +1,4 @@
+"use client"
 // swiper react
 import { Swiper, SwiperSlide} from "swiper/react"
 
@@ -23,31 +24,37 @@ import {
 // data
 const serviceData = [
   {
+    icon: <RxDesktop />,
+    title: 'Frontend Development',
+    description:
+      'Building modern, responsive web applications using React, Next.js, and Tailwind with clean architecture and scalable structure.',
+  },
+  {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Landing Pages',
+    description:
+      'High-converting landing pages with pixel-perfect layouts, smooth interactions, and optimized performance.',
   },
   {
     icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'UI Implementation',
+    description:
+      'Transforming design systems and Figma files into clean, reusable, and maintainable components.',
   },
   {
     icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Performance Optimization',
+    description:
+      'Improving loading speed, accessibility, and SEO through optimized assets and best frontend practices.',
+  },
+  {
+    icon: <RxReader />,
+    title: 'Web App Interfaces',
+    description:
+      'Interactive dashboards, e-commerce systems, and dynamic interfaces with strong state management.',
   },
 ];
+
 
 const ServiceSlider = () => {
   return (

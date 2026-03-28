@@ -3,7 +3,7 @@
 import ProjectCard from './ProjectCard'
 
 // مكون شبكة المشاريع
-const ProjectsGrid = ({ projects, onProjectClick, isTransitioning }) => {
+const ProjectsGrid = ({ projects, onProjectClick }) => {
   if (!projects || !Array.isArray(projects)) {
     return (
       <div className="text-center py-12">
@@ -14,14 +14,12 @@ const ProjectsGrid = ({ projects, onProjectClick, isTransitioning }) => {
 
   return (
     <div
-      className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ${
-        isTransitioning ? 'opacity-0' : 'opacity-100'
-      } transition-opacity duration-300`}
+      className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 `}
     >
       {projects.map((project, index) => (
         <div
           key={project?.id || index}
-          className="animate-scaleIn"
+          className="animate-fade-up"
         >
           <ProjectCard
             project={project}

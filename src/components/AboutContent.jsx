@@ -14,7 +14,6 @@ import {
 import {
   SiNextdotjs,
   SiFramer,
-  SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
 
@@ -50,7 +49,7 @@ const aboutData = [
       info: [
         {
           title: "Webby Awards - Honoree",
-          stage: "2025 - 2025",
+          stage: "2024 - 2025",
         },
         {
           title: "Front-end dev - Finalist",
@@ -111,9 +110,9 @@ const AboutContent = ()=> {
             </div>
             <div className="container mx-auto h-full flex flex-col xl:flex-row gap-x-6 items-center lg:items-start ">
                 {/* text */}
-              <div className="flex-1 flex flex-col justify-center">
-                <h2 className="h2 animate-fade-in-up-delay-1 animate-fade-in-up-init">
-                    Captivating <span className="text-accent">stories</span> birth
+              <div className="flex-1 flex flex-col justify-center ">
+                <h2 className="h2 animate-fade-in-up-delay-1 ">
+                    Captivating <span className="text-accent">stories</span> birth 
                     magnificent sites.
                 </h2>
                 <p

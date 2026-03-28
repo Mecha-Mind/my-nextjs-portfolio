@@ -11,7 +11,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
         onClose()
       }
     }
-
+    const prev = document.body.style.overflow;
     if (isOpen) {
       document.addEventListener('keydown', handleEscape)
       document.body.style.overflow = 'hidden'
@@ -19,7 +19,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
 
     return () => {
       document.removeEventListener('keydown', handleEscape)
-      document.body.style.overflow = 'unset'
+      document.body.style.overflow = prev;
     }
   }, [isOpen, onClose])
 
@@ -56,16 +56,14 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
         </button>
 
         {/* Project Image */}
-        <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20 rounded-t-2xl flex items-center justify-center">
-          <div className="text-8xl opacity-50">
-            <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-          </div>
+        <div className="relative aspect-video bg-gradient-to-br from-accent/20 to-primary/20 rounded-t-2xl overflow-hidden">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-110"
+          />
         </div>
 
         <div className="p-8">

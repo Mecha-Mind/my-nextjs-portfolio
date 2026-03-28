@@ -1,30 +1,18 @@
 "use client"
 
-import { useState } from "react"
-
-// مكون التابس
+// مكون التابس - بدون delay علشان مفيش glitch
 const CategoryTabs = ({ categories, activeCategory, onCategoryChange }) => {
-  const [isTransitioning, setIsTransitioning] = useState(false)
-
   const handleTabClick = (categoryId) => {
     if (categoryId === activeCategory) return
-
-    setIsTransitioning(true)
-
-    // Small delay to show transition effect
-    setTimeout(() => {
-      onCategoryChange(categoryId)
-      setIsTransitioning(false)
-    }, 150)
+    onCategoryChange(categoryId)
   }
 
   return (
-    <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in-up-delay-3">
+    <div className="flex flex-wrap justify-center gap-4 mb-12">
       {categories.map((category, index) => (
         <button
           key={category.id}
           onClick={() => handleTabClick(category.id)}
-          disabled={isTransitioning}
           className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 relative overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed ${
             activeCategory === category.id
               ? "bg-accent text-white shadow-lg shadow-accent/30"

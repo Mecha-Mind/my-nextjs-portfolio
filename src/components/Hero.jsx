@@ -92,53 +92,6 @@ const HeroTest = () => {
             </div>
           </div>
 
-          {/* Right Side - Abstract Decorative Shapes */}
-          {/* <div
-            ref={shapesRef}
-            className={`relative h-[400px] sm:h-[500px] lg:h-[600px] hidden lg:block ${
-              isVisible ? "animate-fade-in-up-delay-4" : "opacity-0"
-            }`}
-          >
-            {/*  Large gradient circle 
-            <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-accent/70/20 rounded-full blur-3xl animate-pulse-slow"></div>
-
-            {/* Medium circle 
-            <div className="absolute top-1/4 right-1/3 w-32 h-32 bg-accent/70/30 rounded-full blur-2xl"></div>
-
-            {/* Small accent circle 
-            <div className="absolute bottom-1/4 right-1/2 w-24 h-24 bg-accent/70/40 rounded-full blur-xl"></div>
-
-            {/* Geometric shapes 
-            <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-accent/70 rounded-full animate-ping-slow"></div>
-            <div className="absolute bottom-1/3 right-1/3 w-3 h-3 bg-accent/70/60 rounded-full"></div>
-
-            {/* Abstract lines/grid pattern 
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 right-0 w-px h-full bg-gradient-to-b from-transparent via-accent to-transparent"></div>
-              <div className="absolute top-1/2 right-0 w-full h-px bg-gradient-to-r from-transparent via-accent to-transparent"></div>
-            </div>
-
-            {/* Floating geometric shape 
-            <div className="absolute top-1/2 right-1/4 w-16 h-16 border-2 border-accent/30 rotate-45 animate-float"></div>
-
-            {/* Another geometric element 
-            <div className="absolute bottom-1/4 right-1/3 w-12 h-12 border-2 border-accent/20 rounded-lg rotate-12"></div>
-
-            {/* Additional decorative elements 
-            <div className="absolute top-1/5 left-1/4 w-8 h-8 border border-accent/20 rounded-full"></div>
-            <div className="absolute bottom-1/5 left-1/3 w-6 h-6 bg-accent/70/10 rounded-full"></div>
-          </div> */}
-
-          {/* Mobile decorative elements */}
-          {/* <div
-            className={`relative h-64 lg:hidden mt-8 ${
-              isVisible ? "animate-fade-in-up-delay-4" : "opacity-0"
-            }`}
-          >
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-accent/70/20 rounded-full blur-3xl"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-accent/70/30 rounded-full blur-2xl"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-accent/70 rounded-full"></div>
-          </div> */}
         </div>
       </div>
 

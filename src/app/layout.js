@@ -1,6 +1,12 @@
 // fonts
 import { Sora } from "next/font/google";
 
+// components
+import Nav from "@/components/Nav";
+import Header from "@/components/Header";
+import TopLeftImg from "@/components/TopLeftImg";
+import UpToTop from "@/components/UpToTop";
+
 // fonts settings
 const sora = Sora({
   subsets: ["latin"],
@@ -10,7 +16,6 @@ const sora = Sora({
 
 import "../../styles/globals.css";
 // components
-import Layout from "../components/Layout";
 
 
 // meta data
@@ -27,9 +32,13 @@ export default function RootLayout({ children }) {
       className={`page bg-site bg-cover bg-no-repeat ${sora.variable} font-sora text-white relative antialiased`}
     >
 
-        <Layout>
-              {children}
-        </Layout>
+        <UpToTop />
+        <TopLeftImg />
+        <Nav />
+        <Header />
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );

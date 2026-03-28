@@ -1,54 +1,45 @@
 // بيانات المشاريع
 export const projectsData = {
   "html-css": {
-    title: "HTML & CSS",
+    title: "HTML & CSS Projects",
     projects: [
       {
-        id: 1,
-        title: "Landing Page Design",
-        description: "Professional landing page design with responsive design",
-        image: "/thumb1.jpg",
-        technologies: ["HTML5", "CSS3", "SASS", "Responsive Design"],
-        liveLink: 'https://github.com/Mecha-Mind',
-        features: [
-          "Responsive design for all devices",
-          "Advanced animations with CSS",
-          "Performance optimization and SEO"
-        ],
-        logic: "Using Grid and Flexbox for layout, with animations for interaction"
-      },
-      {
         id: 2,
-        title: "Portfolio Website",
-        description: "Personal portfolio website showcasing projects and skills",
-        image: "/thumb2.jpg",
-        technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"],
-        liveLink: 'https://github.com/Mecha-Mind',
+        title: "Responsive Admin Dashboard",
+        description: "Multi-page dashboard layout with reusable UI patterns and responsive design.",
+        image: "/thumb1.jpg",
+        technologies: ["HTML5", "CSS3", "Responsive Design"],
+        liveLink: "https://mecha-mind.github.io/Dashboard/",
         features: [
-          "Interactive gallery for projects",
-          "smooth scroll navigation",
-          "dark/light mode toggle"
+          "8 structured pages",
+          "Sidebar navigation system",
+          "Reusable card and table components",
+          "Fully responsive layout"
         ],
-        logic: "Using vanilla JavaScript for interactions with GSAP for animations"
+        logic:
+          "Built using modular CSS structure with consistent spacing system and layout patterns."
       }
     ]
   },
-  "nextjs-tailwind": {
-    title: "Next.js & Tailwind",
+  "nextjs": {
+    title: "Next.js Applications",
     projects: [
       {
-        id: 3,
-        title: "E-commerce Platform",
-        description: "Full-featured e-commerce platform",
-        image: "/thumb3.jpg",
-        technologies: ["Next.js", "Tailwind CSS", "Stripe", "MongoDB"],
-        liveLink: 'https://github.com/Mecha-Mind',
+        id: 1,
+        title: "E-commerce Store (WIP)",
+        description: "Modern e-commerce web app with product variants, cart logic, and persistent state.",
+        image: "/store-thumb.jpg",
+        technologies: ["Next.js", "React", "Tailwind CSS", "Context API"],
+        liveLink: "PUT_YOUR_LIVE_LINK_HERE",
         features: [
-          "Secure payment system with Stripe",
-          "Inventory management",
-          "Order tracking"
+          "Product variants (color & size)",
+          "Stock limit handling",
+          "Persistent cart with localStorage",
+          "Toast notifications system",
+          "Clean modular architecture"
         ],
-        logic: "Using Next.js API routes, Tailwind for design, Stripe for payment"
+        logic:
+          "Implemented custom cart context with variant-based unique keys and optimized state updates using React hooks."
       }
     ]
   },
@@ -57,13 +48,13 @@ export const projectsData = {
     projects: [
       {
         id: 4,
-        title: "Weather App",
-        description: "Interactive weather app with API",
+        title: "PrayerTimes App",
+        description: "Interactive PrayerTimes app with API",
         image: "/thumb4.jpg",
-        technologies: ["JavaScript", "Weather API", "Local Storage"],
-        liveLink: 'https://github.com/Mecha-Mind',
+        technologies: ["JavaScript", "PrayerTimes API", "Local Storage"],
+        liveLink: 'https://mecha-mind.github.io/PrayerTimes/',
         features: [
-            "Precise weather data",
+            "Precise PrayerTimes data",
           "Favorite cities saving",
           "Automatic updates"
         ],
@@ -72,22 +63,24 @@ export const projectsData = {
     ]
   },
   "games": {
-    title: "Games",
+    title: "Interactive Games",
     projects: [
       {
-        id: 5,
-        title: "Snake Game",
-        description: "Classic snake game",
-        image: "/project5.jpg",
-        technologies: ["JavaScript", "Canvas API", "CSS3"],
-        liveLink: 'https://github.com/Mecha-Mind',
+        id: 3,
+        title: "Hangman Game",
+        description: "Interactive word guessing game built with pure JavaScript.",
+        image: "/hangman-thumb.jpg",
+        technologies: ["JavaScript", "HTML5", "CSS3"],
+        liveLink: "PUT_YOUR_LIVE_LINK_HERE",
         features: [
-          "Arrow control",
-          "Points and levels system",
-          "High score saving"
+          "Dynamic word generation",
+          "Game state management",
+          "Win/Lose detection logic",
+          "Score tracking system"
         ],
-        logic: "Using Canvas API for drawing, game loop for continuous updates"
+        logic:
+          "Implemented game state transitions and dynamic UI updates using vanilla JavaScript without external libraries."
       }
     ]
-  }
+  },
 }

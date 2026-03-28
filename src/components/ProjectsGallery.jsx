@@ -12,7 +12,6 @@ const ProjectsGallery = () => {
   const [activeCategory, setActiveCategory] = useState("html-css")
   const [selectedProject, setSelectedProject] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const [isTransitioning, setIsTransitioning] = useState(false)
 
   const categories = Object.entries(projectsData).map(([id, data]) => ({
     id,
@@ -21,14 +20,7 @@ const ProjectsGallery = () => {
 
   const handleCategoryChange = (categoryId) => {
     if (categoryId === activeCategory) return
-
-    setIsTransitioning(true)
-
-    // Small delay to show transition effect
-    setTimeout(() => {
-      setActiveCategory(categoryId)
-      setIsTransitioning(false)
-    }, 150)
+    setActiveCategory(categoryId)
   }
 
   const handleProjectClick = (project) => {
@@ -46,10 +38,10 @@ const ProjectsGallery = () => {
   const currentProjects = projectsData[activeCategory]?.projects || []
 
   return (
-    <section className="py-20 px-4" id="projects">
+    <section className="pt-10 px-4" id="projects">
       <div className="container mx-auto">
         {/* Title */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h2 className="h2 fade-in-up-delay-1">
             Featured <span className="text-accent">Projects</span>
           </h2>
@@ -61,7 +53,7 @@ const ProjectsGallery = () => {
             From personal experiments to client-inspired designs, each piece reflects my passion for creating functional 
             and visually appealing digital solutions.
           </p>
-        </div>
+        </div> */}
 
         {/* Category Tabs */}
         <CategoryTabs
@@ -74,7 +66,6 @@ const ProjectsGallery = () => {
         <ProjectsGrid
           projects={currentProjects}
           onProjectClick={handleProjectClick}
-          isTransitioning={isTransitioning}
         />
 
         {/* Project Modal */}
@@ -87,10 +78,10 @@ const ProjectsGallery = () => {
         {/* View All Button */}
        <div className="flex justify-center animate-fade-in-up-delay-5 mt-10">
           <Link
-            href="/work"
+            href="/contact"
             className="group flex items-center gap-2 px-8 py-4 bg-accent/70 text-white font-semibold rounded-lg bg-accent/50 transition-all duration-300 shadow-lg shadow-accent/20 hover:shadow-accent/30 hover:scale-105"
           >
-            View All Projects
+            Let's make somthing special.
             <HiArrowRight className="text-xl group-hover:translate-x-1 transition-transform duration-300" />
           </Link>
         </div>

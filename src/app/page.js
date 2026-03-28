@@ -1,9 +1,9 @@
 // components
-import HeroTest from "@/components/HeroTest";
+import Hero from "@/components/Hero";
 import AboutContent from "@/components/AboutContent";
-import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
-import ProjectsGallery from "@/components/ProjectsGallery";
+import FeaturedProjectsSection from "@/components/home/FeaturedProjects";
+
 // meta data
 export const metadata = {
   title: "Hani Abdallah - Home",
@@ -14,10 +14,9 @@ export const metadata = {
 const Home = () => {
   return (
     <div className="h-full">
-      <HeroTest />
+      <Hero />
       <AboutContent />
-      {/* <ProjectsSection /> */}
-      <ProjectsGallery />
+      <FeaturedProjectsSection />
       <ContactSection />
     </div>
   );

@@ -39,7 +39,7 @@ const ProjectCard = ({ project, onClick, index = 0 }) => {
           </div>
       </div>
 
-      <div className="p-6 bg-red z-50 absolute bottom-0 group-hover:blur-sm">
+      <div className="p-6 bg-primary/80 backdrop-blur-sm z-50 absolute bottom-0 group-hover:blur-sm">
         <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent transition-colors">
           {project?.title || 'Project Title'}
         </h3>

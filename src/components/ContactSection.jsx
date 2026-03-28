@@ -30,7 +30,7 @@ const ContactSection = () => {
             {/* Contact Info */}
             <div className="flex flex-col gap-4 mb-8 animate-fade-in-up-delay-3">
               <div className="flex items-center gap-4 justify-center lg:justify-start">
-                <div className="w-12 h-12 rounded-full bg-accent/70/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
                   <HiEnvelope className="text-accent text-xl" />
                 </div>
                 <div>
@@ -45,7 +45,7 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-center gap-4 justify-center lg:justify-start">
-                <div className="w-12 h-12 rounded-full bg-accent/70/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
                   <HiPhone className="text-accent text-xl" />
                 </div>
                 <div>
@@ -60,7 +60,7 @@ const ContactSection = () => {
               </div>
 
               <div className="flex items-center gap-4 justify-center lg:justify-start">
-                <div className="w-12 h-12 rounded-full bg-accent/70/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
                   <HiMapPin className="text-accent text-xl" />
                 </div>
                 <div>

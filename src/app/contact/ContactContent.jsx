@@ -64,14 +64,22 @@ const ContactContent = () => {
         body: JSON.stringify({ ...formData }),
       });
 
+      const data = await response.json().catch(() => ({}));
+
       if (response.ok) {
         setSubmitSuccess(true);
         toast.success("Email Was Successfully Sent!");
+      } else if (response.status === 429) {
+        toast.error(data.error || "Too many requests. Please try again later.");
+      } else if (response.status === 400 && data.errors) {
+        setFormErrors(data.errors);
+        toast.error("Please fix the errors below.");
       } else {
-        toast.error("Something went wrong, Failed to sent email!");
+        toast.error(data.error || "Something went wrong. Failed to send email!");
       }
     } catch (error) {
       console.error(error);
+      toast.error("Network error. Please try again.");
     }
   };
 
@@ -128,7 +136,7 @@ const ContactContent = () => {
                   <span className={modules.errorMessage}>{formErrors.name}</span>
                 )}
               <input 
-                type="text" 
+                type="email" 
                 placeholder="email" 
                 className="input" 
                 id="email"
@@ -174,7 +182,7 @@ const ContactContent = () => {
             </button>
           </form>
           )}
-          <div>
+          <div className='fixed top-6 right-6'>
             <ToastContainer></ToastContainer>
           </div>
         </>       
